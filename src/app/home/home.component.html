@@ -1,0 +1,184 @@
+<head>
+  <title>Update user</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<link
+  href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+  rel="stylesheet"
+  id="bootstrap-css"
+/>
+<link
+  rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<nav
+  class="navbar navbar-icon-top navbar-expand-lg navbar-light"
+  style="background-color: #e3f2fd"
+>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/home">
+          <i class="fa fa-home"></i>
+          Accueil
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/listuser">
+          <i class="fa fa-users" aria-hidden="true"></i>
+          Liste des citoyens
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="/form">
+          <i class="fa fa-user-circle" aria-hidden="true"></i>
+          Ajouter un citoyen
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fa fa-bell">
+            <span class="badge badge-danger">0</span>
+          </i>
+          Notifications
+        </a>
+      </li>
+    </ul>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/profile">
+          <i class="fa fa-user-circle" aria-hidden="true"></i>
+          Profile
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">
+          <i class="fa fa-sign-out" aria-hidden="true"></i>
+
+          Déconnexion
+        </a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input
+        class="form-control mr-sm-2"
+        type="text"
+        placeholder="Chercher"
+        aria-label="Search"
+      />
+      <button type="button" class="btn btn-outline-info btn-lg">
+        chercher
+      </button>
+    </form>
+  </div>
+</nav>
+<!--Carousel Wrapper-->
+<div
+  id="multi-item-example"
+  class="carousel slide carousel-multi-item"
+  data-ride="carousel"
+>
+  <!--Indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+    <li data-target="#multi-item-example" data-slide-to="1"></li>
+    <li data-target="#multi-item-example" data-slide-to="2"></li>
+  </ol>
+  <!--/.Indicators-->
+
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+    <!--First slide-->
+    <div class="carousel-item active">
+      <div class="col-md-4">
+        <div class="card mb-2">
+          <img class="card-img-top" src="assets/cin.png" alt="Card image cap" />
+          <div class="card-body">
+            <h4 class="card-title">Carte d'identité national</h4>
+            <p class="card-text">
+              Ce service en ligne vous permet de faire une demande à distance du
+              CIN à travers un site web sécurisé mis à votre disposition par le
+              ministère des Technologies de la Communication.
+            </p>
+            <a class="btn btn-outline-info waves-effect">Plus d'infos</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-2">
+          <img
+            class="card-img-top"
+            src="assets/permis.png"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h4 class="card-title">Permis de conduire</h4>
+            <p class="card-text">
+              Ce service en ligne vous permet de faire une demande à distance du
+              permis de conduire à travers un site web sécurisé mis à votre
+              disposition par le ministère des Technologies de la Communication.
+            </p>
+            <a class="btn btn-outline-info waves-effect">Plus d'infos</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-2">
+          <img
+            class="card-img-top"
+            src="assets/signing.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h4 class="card-title">Carte grise</h4>
+            <p class="card-text">
+              Ce service en ligne vous permet de faire une demande à distance du
+              Carte grise à travers un site web sécurisé mis à votre disposition
+              par le ministère des Technologies de la Communication.
+            </p>
+            <a class="btn btn-outline-info waves-effect">Plus d'infos</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/.First slide-->
+  </div>
+  <!--/.Slides-->
+</div>
+<!--/.Carousel Wrapper-->
+
+<div class="container-sm p-5 my-5 border">
+  <h1>Conditions de bénéfice du service</h1>
+  <p>
+    Peuvent bénéficier de ce service les citoyens tunisiens résidant en Tunisie
+    ou à l’étranger et ceux résidant à l’étranger qui séjournent sur le
+    territoire tunisien. Comme ils peuvent bénéficier de ce service les
+    étrangers nés sur le territoire tunisien, les étrangers y résidant et les
+    étrangers qui ont résidé sur le territoire tunisien une période déterminée..
+  </p>
+  <p>
+    Le demandeur du document assume l’entière responsabilité sur les données
+    fournies. Il ferait l’objet de poursuites judicaires en cas de fausse
+    déclaration ou de fraude.
+  </p>
+  <p>
+    En aucun cas, le demandeur du document ne peut demander le remboursement des
+    frais du service payés
+  </p>
+</div>
