@@ -12,6 +12,7 @@ import { ListuserComponent } from './listuser/listuser.component';
 import { ProfileComponent } from './profile/profile.component';
 import { RegistreComponent } from './registre/registre.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { NavigationComponent } from './navigation/navigation.component';
     ListuserComponent,
     ProfileComponent,
     RegistreComponent,
-    NavigationComponent
+    NavigationComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
