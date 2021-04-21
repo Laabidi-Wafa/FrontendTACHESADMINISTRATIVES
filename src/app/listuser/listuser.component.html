@@ -3,29 +3,28 @@
     <!-- LIST -->
     <div class="col-md-12">
       <form id="form-list-user">
-        <legend>List of users</legend>
-
+        <h2><legend>La liste des citoyens</legend></h2>
         <div class="pull-right">
-          <a class="btn btn-default-btn-xs btn-primary" (click)="refreshList()"
-            ><i class="glyphicon glyphicon-refresh"></i> Refresh</a
+          <a class="btn btn-outline-info" (click)="refreshList()"
+            ><i class="glyphicon glyphicon-refresh"></i> Actualiser</a
           >
-          <a class="btn btn-default-btn-xs btn-success" routerLink="/form"
-            ><i class="glyphicon glyphicon-plus"></i> New</a
+          <a class="btn btn-outline-danger" routerLink="/form"
+            ><i class="glyphicon glyphicon-plus"></i> Ajouter</a
           >
         </div>
         <br /><br /><br />
-        <table class="table table-bordered table-condensed table-hover">
+        <table class="table table-sm">
           <thead>
             <tr>
-              <th>Id</th>
-              <th>Firstname</th>
-              <th>Lastname</th>
-              <th>Address</th>
-              <th>Phone</th>
-              <th>Date of birth</th>
-              <th>Email</th>
-              <th>Password</th>
-              <th>Actions</th>
+              <th scope="col">Id</th>
+              <th scope="col">Firstname</th>
+              <th scope="col">Lastname</th>
+              <th scope="col">Address</th>
+              <th scope="col">Phone</th>
+              <th scope="col">Date of birth</th>
+              <th scope="col">Email</th>
+              <th scope="col">Password</th>
+              <th scope="col">Actions</th>
             </tr>
           </thead>
           <tbody id="form-list-client-body">
