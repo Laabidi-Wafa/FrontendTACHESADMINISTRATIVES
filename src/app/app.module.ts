@@ -11,6 +11,7 @@ import { UserFormComponent } from './userform/userform.component';
 import { ListuserComponent } from './listuser/listuser.component';
 import { ProfileComponent } from './profile/profile.component';
 import { RegistreComponent } from './registre/registre.component';
+import { NavigationComponent } from './navigation/navigation.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { RegistreComponent } from './registre/registre.component';
     UserFormComponent,
     ListuserComponent,
     ProfileComponent,
-    RegistreComponent
+    RegistreComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
