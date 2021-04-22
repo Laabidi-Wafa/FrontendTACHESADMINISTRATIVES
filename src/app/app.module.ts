@@ -13,6 +13,9 @@ import { ProfileComponent } from './profile/profile.component';
 import { RegistreComponent } from './registre/registre.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { FooterComponent } from './footer/footer.component';
+import { DemandeComponent } from './gestionCIN/demande/demande.component';
+import { RenouvellementComponent } from './gestionCIN/renouvellement/renouvellement.component';
+import { DuplicataComponent } from './gestionCIN/duplicata/duplicata.component';
 
 
 @NgModule({
@@ -25,7 +28,10 @@ import { FooterComponent } from './footer/footer.component';
     ProfileComponent,
     RegistreComponent,
     NavigationComponent,
-    FooterComponent
+    FooterComponent,
+    DemandeComponent,
+    RenouvellementComponent,
+    DuplicataComponent
   ],
   imports: [
     BrowserModule,
