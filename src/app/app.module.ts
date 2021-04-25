@@ -16,6 +16,11 @@ import { FooterComponent } from './footer/footer.component';
 import { DemandeComponent } from './gestionCIN/demande/demande.component';
 import { RenouvellementComponent } from './gestionCIN/renouvellement/renouvellement.component';
 import { DuplicataComponent } from './gestionCIN/duplicata/duplicata.component';
+import { UserNavbarComponent } from './user-navbar/user-navbar.component';
+import { ChoixComponent } from './gestionCIN/choix/choix.component';
+import { ChoixPComponent } from './gestionPermis/choix-p/choix-p.component';
+import { ChoixCGComponent } from './gestionCG/choix-cg/choix-cg.component';
+import { Error404Component } from './error404/error404.component';
 
 
 @NgModule({
@@ -31,7 +36,12 @@ import { DuplicataComponent } from './gestionCIN/duplicata/duplicata.component';
     FooterComponent,
     DemandeComponent,
     RenouvellementComponent,
-    DuplicataComponent
+    DuplicataComponent,
+    UserNavbarComponent,
+    ChoixComponent,
+    ChoixPComponent,
+    ChoixCGComponent,
+    Error404Component
   ],
   imports: [
     BrowserModule,

@@ -9,6 +9,11 @@ import { ProfileComponent } from './profile/profile.component';
 import { DemandeComponent } from './gestionCIN/demande/demande.component';
 import { RenouvellementComponent } from './gestionCIN/renouvellement/renouvellement.component';
 import { DuplicataComponent } from './gestionCIN/duplicata/duplicata.component';
+import { UserNavbarComponent } from './user-navbar/user-navbar.component';
+import { ChoixComponent } from './gestionCIN/choix/choix.component';
+import { ChoixPComponent } from './gestionPermis/choix-p/choix-p.component';
+import { ChoixCGComponent } from './gestionCG/choix-cg/choix-cg.component';
+import { Error404Component } from './error404/error404.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -22,6 +27,11 @@ const routes: Routes = [
   { path: 'demandeCIN', component: DemandeComponent },
   { path: 'renouvellementCIN', component: RenouvellementComponent },
   { path: 'duplicataCIN', component: DuplicataComponent },
+  { path: 'testnavbar', component: UserNavbarComponent },
+  { path: 'choixcin', component: ChoixComponent },
+  { path: 'choixpermis', component: ChoixPComponent },
+  { path: 'choixcg', component: ChoixCGComponent },
+  { path: '**', component: Error404Component },
 ];
 
 @NgModule({
