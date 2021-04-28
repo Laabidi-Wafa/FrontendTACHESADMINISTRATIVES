@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 import { AuthComponent } from './auth/auth.component';
 import { UserserviceService } from './services/userservice.service';
 import { HomeComponent } from './home/home.component';
@@ -18,10 +20,15 @@ import { RenouvellementComponent } from './gestionCIN/renouvellement/renouvellem
 import { DuplicataComponent } from './gestionCIN/duplicata/duplicata.component';
 import { UserNavbarComponent } from './user-navbar/user-navbar.component';
 import { ChoixComponent } from './gestionCIN/choix/choix.component';
-import { ChoixPComponent } from './gestionPermis/choix-p/choix-p.component';
 import { ChoixCGComponent } from './gestionCG/choix-cg/choix-cg.component';
 import { Error404Component } from './error404/error404.component';
-
+import { DemandePermisComponent } from './gestionPermis/demande-permis/demande-permis.component';
+import { RenouvellementPermisComponent } from './gestionPermis/renouvellement-permis/renouvellement-permis.component';
+import { DuplicataPermisComponent } from './gestionPermis/duplicata-permis/duplicata-permis.component';
+import { ChoixPermisComponent } from './gestionPermis/choix-permis/choix-permis.component';
+import { DemandeCGComponent } from './gestionCG/demande-cg/demande-cg.component';
+import { RenouvellementCGComponent } from './gestionCG/renouvellement-cg/renouvellement-cg.component';
+import { DuplicataCGComponent } from './gestionCG/duplicata-cg/duplicata-cg.component';
 
 @NgModule({
   declarations: [
@@ -39,17 +46,18 @@ import { Error404Component } from './error404/error404.component';
     DuplicataComponent,
     UserNavbarComponent,
     ChoixComponent,
-    ChoixPComponent,
     ChoixCGComponent,
-    Error404Component
+    Error404Component,
+    DemandePermisComponent,
+    RenouvellementPermisComponent,
+    DuplicataPermisComponent,
+    ChoixPermisComponent,
+    DemandeCGComponent,
+    RenouvellementCGComponent,
+    DuplicataCGComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    HttpClientModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [UserserviceService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
